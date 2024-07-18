@@ -9,6 +9,7 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:"slnt" 0;
+  background-color: black;
 }
   .natto{
    color: rgb(0, 0, 0);
@@ -18,7 +19,8 @@
 
 /* banner style */
 .bg-light{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background:rgb(17, 17, 17)
+    rgba(119, 119, 119, 0);
     padding: 20px;
 }
 
@@ -41,6 +43,7 @@
 .fitness-word{
     font-size: 36px;
     color: rgb(230, 83, 60);
+    font-size: 45px;
 }
 
 .shape-word{
@@ -100,6 +103,14 @@
 
 
 /* habit style */
+
+
+.habit-section{
+    background-color: rgb(0, 0, 0);
+    padding: 30px 40px;
+    margin: 100px 50px;
+   
+}
  .font-color{
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -123,29 +134,30 @@
 }
 
 .habit-sub-title{
-    font-size: 14px;
+    font-size: 24px;
    
 }
 
-.habit-section{
-    background-color:  rgb(0, 0, 0);
-}
+
  .image-box{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-top: 4rem;
     align-items: center;
+    text-align: center;
  }
 
  
 
  .pic-1{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+ }
 
-
+ .habit{
+    font-size: 48px;
  }
 
 
@@ -155,13 +167,22 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(34, 34, 34);
-    margin: 50px;
+    margin: 60px;
+    border-radius: 18px;
+    padding: 5px 0;
+ }
+ .extra{
+    font-size: 48px;
+ }
+
+ .we {
+    font-size: 24px;
  }
 
  .run-image{
     width: 350px;
     height: 300px;
-    border-radius: 18ox;
+    border-radius: 18px;
     margin: 40px 30px;
  }
 
@@ -169,11 +190,14 @@
 
  .sectiuon-2{
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(34, 34, 34);
-    padding: 30px 150px;
-    
+    padding: 50px 100px;
+    gap: 150px;
+ }
+
+ .bmi-table{
+    display: flex;
+    flex-direction: column;
  }
  #box-5{
     grid-column: span 2;
@@ -191,11 +215,7 @@
  }
  .Calculate{
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 200px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    
 
 }
 
@@ -216,12 +236,14 @@
 }
 
 .th, .Weight{
-    font-size: 16px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
 
 }
 
 .chart{
     font-size: 28px;
+    color: rgb(255, 255, 255);
 }
 
 .td{
@@ -230,3 +252,96 @@
     justify-content: flex-start;
     padding: 10px;
 }
+
+
+/* trainers section style */
+.rong{
+    background-color:  rgb(0, 0, 0); 
+    margin:  80px 250px;
+}
+
+.tm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-title{
+    font-size: 48px;
+    color: azure;
+    margin: 0 auto;
+}
+
+.team-sub-title{
+   
+    font-size: 14px;
+    color:rgba(255, 255, 255, 0.5);
+    margin: 15px auto;
+}
+
+.Trainers{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    
+
+
+  
+}
+
+.trainer{
+    width: 210px;
+    height: 190px;
+    border-radius: 12px;
+    margin: 10px auto;
+    padding: 5px;
+
+ 
+}
+
+
+/* footer style */
+.foot{ 
+    background-color: aquamarine;
+    justify-content: center;
+    padding: 50px;
+    padding: 40px 100px;
+    background: rgb(34, 34, 34);
+
+    
+}
+.fitness{
+   flex-direction:column;
+   justify-content:start;
+}
+.get{
+    flex-direction:row;
+   justify-content: center;
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-size: 18px;
+}
+
+
+.Started{
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+
+}
+
+.Fit{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.get-title{
+    font-size: 32px;
+}
+
