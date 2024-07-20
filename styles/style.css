@@ -19,16 +19,18 @@
 
 /* banner style */
 .bg-light{
-    background:rgb(17, 17, 17)
-    rgba(119, 119, 119, 0);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
     padding: 20px;
+    margin-left: 40px;
+    padding: 30px;
 }
 
 .navbar{
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
-   padding: 4px;
-   margin: 55px 120px;
+   gap: 245px;
+  
+   
    
 }
 
@@ -46,8 +48,11 @@
     font-size: 45px;
 }
 
-.shape-word{
-   
+.font-face{
+    font-family: 'Miami', sans-serif;
+ 
+    
+                
 }
 
 .item{
@@ -63,13 +68,14 @@
 
 .description-picture{
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 100px;
-
+    
 }
 
 .banner-title{
-    font-size: 78px;
+    font-size: 76px;
     color: rgb(255, 255, 255);
 
 }
@@ -77,24 +83,30 @@
 .banner-content{
     width: 590px;
     height: 440px;
-    margin-left: 150px;
+    
+}
+
+.body{
+    
 }
 
 .banner-description{
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
-    margin-top: 0 auto;
+    margin-bottom: 0 30px;
 }
 
 .btn-primary{
     border-radius: 42px;
     background: rgb(230, 83, 60);
     width: 224px;
-    height: 60px;
+    height: 54px;
     padding: 16px 40px 16px 40px;
     font-size: 18px;
     color: rgb(255, 255, 255);
-    margin: 0 14px;
+    flex-grow: 0;
+   
+   
     
 }
 
@@ -106,7 +118,8 @@
     padding: 16px 40px 16px 40px;
     font-size: 18px;
     color: rgb(255, 255, 255);
-    border-color: rgba(48, 48, 48, 0.54);
+  
+    border: 1px solid rgb(255, 255, 255);
 }
   
 /* shared style */
@@ -176,13 +189,12 @@
 
  /* run section style */
  .run{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(34, 34, 34);
-    margin: 60px;
-    border-radius: 18px;
-    padding: 5px 0;
+    width: 1060px;
+    height: 371px;
+    padding-left: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 54px;
+    border-radius: 8px;
  }
  .extra{
     font-size: 48px;
@@ -290,7 +302,8 @@
    
     font-size: 14px;
     color:rgba(255, 255, 255, 0.5);
-    margin: 15px auto;
+    margin: 15px 5px;
+    padding: 15px 0;
 }
 
 .Trainers{
@@ -299,6 +312,7 @@
     padding: 5px 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
+    margin: 10px;
     
 
 
@@ -318,36 +332,37 @@
 
 /* footer style */
 .foot{ 
-    flex-direction: row;
-    padding: 20px 150px;
-    background: rgb(34, 34, 34);
-    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(34, 34, 34);  
+    padding: 60px;
+}
 
-    
+
+.foot-1{
+    display: flex;
+    flex-direction: row;
+   gap: 80px;
+
+
+
 }
 .fitness{
     flex-direction: column;
    
-}
-.get{
    
-   color: rgb(255, 255, 255);
-   font-size: 18px;
 }
 
 
 .Started{
-  flex-direction: column;
-  align-items: center;
- 
-   
+    flex-direction: column;
     color: rgba(255, 255, 255, 0.5);
     font-size: 23px;
-
+   
 }
 
 .Fit{
-   
+     margin: 0 auto;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
 
@@ -355,13 +370,31 @@
 
 .get-title{
     font-size: 26px;
-    text-align: center;
+   
+}
+.serv{
+   margin: 0 auto;
+   text-decoration: none;
 }
 
-.fot-table{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.all{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    font-size: 20px;
+    
+}
+
+hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 1000px;
+    margin-top: 60px ;
 
 }
- 
+  /* responsive */
+  @media screen and (max-width:576px) {
+    .description-picture{
+        display: flex;
+        flex-direction: column;
+    }
+    
+  }
